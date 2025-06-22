@@ -1,5 +1,4 @@
 import java.util.Date;
-
 public class Task {
     // model class for Task
     private int id;
@@ -53,5 +52,16 @@ public class Task {
 
     public void setUpdatedAt(Date updatedAt){
         this.updatedAt = updatedAt;
+    }
+
+    @Override
+    public String toString() {
+        return "Task{" +
+                "id=" + id +
+                ", description='" + description + '\'' +
+                ", status='" + status + '\'' +
+                ", createdAt=" + createdAt +
+                ", updatedAt=" + updatedAt +
+                '}';
     }
 }
